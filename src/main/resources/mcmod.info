@@ -1,0 +1,18 @@
+[
+  {
+    "modid": "IGIExtended",
+    "name": "IGIExtended",
+    "description": "Extend InGameInfoXML's Messages.",
+    "version": "${version}",
+    "mcversion": "${mcversion}",
+    "url": "",
+    "updateUrl": "",
+    "authorList": [
+      "Kasumi_Nova"
+    ],
+    "credits": "",
+    "logoFile": "",
+    "screenshots": [],
+    "dependencies": []
+  }
+]
