@@ -18,16 +18,11 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraftforge.fml.relauncher.Side;
 import org.apache.logging.log4j.Logger;
 
-@Mod(
-        modid = IGIExtended.MOD_ID,
-        name = IGIExtended.MOD_NAME,
-        version = IGIExtended.VERSION
-)
+@Mod(modid = IGIExtended.MOD_ID, name = IGIExtended.MOD_NAME, version = IGIExtended.VERSION)
 public class IGIExtended {
-
     public static final String MOD_ID = "igiextended";
     public static final String MOD_NAME = "IGIExtended";
-    public static final String VERSION = "1.0-SNAPSHOT";
+    public static final String VERSION = "1.0";
     public static Logger logger;
     public static SimpleNetworkWrapper network;
     public static NBTTagCompound cachedData =  new NBTTagCompound();

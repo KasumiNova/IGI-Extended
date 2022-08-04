@@ -1,18 +1,23 @@
-[
-  {
-    "modid": "IGIExtended",
-    "name": "IGIExtended",
-    "description": "Extend InGameInfoXML's Messages.",
-    "version": "${version}",
-    "mcversion": "${mcversion}",
-    "url": "",
-    "updateUrl": "",
-    "authorList": [
-      "Kasumi_Nova"
-    ],
-    "credits": "",
-    "logoFile": "",
-    "screenshots": [],
-    "dependencies": []
-  }
-]
+{
+  "modListVersion": 2,
+  "modList": [
+    {
+      "modid": "igiextended",
+      "name": "IGI Extended",
+      "description": "Extend InGameInfoXML's Tags.",
+      "version": "${version}",
+      "mcversion": "${mcversion}",
+      "url": "https://github.com/KasumiNova/IGI-Extended",
+      "updateUrl": "",
+      "authorList": [
+        "Kasumi_Nova"
+      ],
+      "credits": "",
+      "logoFile": "assets/igi-extended_logo.png",
+      "screenshots": [],
+      "dependencies": ["lunatriuscore@[1.2.0.42,)", "ingameinfoxml@[2.8.2.94,)"],
+      "requiredMods": ["lunatriuscore@[1.2.0.42,)", "ingameinfoxml@[2.8.2.94,)"],
+      "useDependencyInformation": true
+    }
+  ]
+}
