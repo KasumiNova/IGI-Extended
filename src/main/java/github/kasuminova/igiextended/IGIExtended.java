@@ -1,5 +1,6 @@
 package github.kasuminova.igiextended;
 
+import github.kasuminova.igiextended.Tags.IGIETags;
 import github.kasuminova.igiextended.network.RemoteDataMessage;
 import github.kasuminova.igiextended.network.ResponseMessage;
 import net.minecraft.block.Block;
@@ -22,7 +23,7 @@ import org.apache.logging.log4j.Logger;
 public class IGIExtended {
     public static final String MOD_ID = "igiextended";
     public static final String MOD_NAME = "IGIExtended";
-    public static final String VERSION = "1.0";
+    public static final String VERSION = "1.1";
     public static Logger logger;
     public static SimpleNetworkWrapper network;
     public static NBTTagCompound cachedData =  new NBTTagCompound();
@@ -60,7 +61,7 @@ public class IGIExtended {
         if (FMLCommonHandler.instance().getEffectiveSide() != Side.CLIENT) {
             return;
         }
-        Tags.register();
+        IGIETags.register();
     }
 
     /**

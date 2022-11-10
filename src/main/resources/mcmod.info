@@ -15,8 +15,8 @@
       "credits": "",
       "logoFile": "assets/igi-extended_logo.png",
       "screenshots": [],
-      "dependencies": ["lunatriuscore@[1.2.0.42,)", "ingameinfoxml@[2.8.2.94,)"],
-      "requiredMods": ["lunatriuscore@[1.2.0.42,)", "ingameinfoxml@[2.8.2.94,)"],
+      "dependencies": [],
+      "requiredMods": [],
       "useDependencyInformation": true
     }
   ]

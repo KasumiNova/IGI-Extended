@@ -33,20 +33,17 @@ public class RemoteDataMessage implements IMessage {
 			final NBTTagCompound data = new NBTTagCompound();
 			final EntityPlayerMP player = ctx.getServerHandler().player;
 			IThreadListener mainThread = (WorldServer) player.world;
-			mainThread.addScheduledTask(new Runnable() {
-				@Override
-				public void run() {
-					try {
-						double meanTickTime = mean(player.server.tickTimeArray) * 1.0E-6D;
-						double meanTPS = Math.min(1000.0/meanTickTime, 20);
+			mainThread.addScheduledTask(() -> {
+				try {
+					double meanTickTime = mean(player.server.tickTimeArray) * 1.0E-6D;
+					double meanTPS = Math.min(1000.0/meanTickTime, 20);
 
-						data.setDouble("meanTickTime", meanTickTime);
-						data.setDouble("meanTPS", meanTPS);
-						ResponseMessage response = new ResponseMessage(data);
-						IGIExtended.network.sendTo(response, player);
-					} catch (Exception e) {
-						e.printStackTrace();
-					}
+					data.setDouble("meanTickTime", meanTickTime);
+					data.setDouble("meanTPS", meanTPS);
+					ResponseMessage response = new ResponseMessage(data);
+					IGIExtended.network.sendTo(response, player);
+				} catch (Exception e) {
+					e.printStackTrace();
 				}
 			});
 			return null;
